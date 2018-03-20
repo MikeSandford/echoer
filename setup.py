@@ -4,7 +4,7 @@
 from distutils.core import setup
 
 setup(name='Echoer',
-    version='2.1',
+    version='2.2',
     description='Say things out loud',
     author='Mike Sandford',
     author_email='mike.sandford@arundo.com',
