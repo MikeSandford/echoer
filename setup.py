@@ -4,15 +4,19 @@
 from distutils.core import setup
 
 setup(name='Echoer',
-    version='1.3',
+    version='2.0',
     description='Say things out loud',
     author='Mike Sandford',
     author_email='mike.sandford@arundo.com',
     url='https://github.com/MikeSandfordArundo/echoer.git',
     packages=['echoer'],
+    install_requires=[
+        'click',
+        'pyttsx3==2.7',
+      ],
     entry_points={
         'console_scripts': [
-            'echoer=echoer.start:main',
+            'echoer=echoer.cli:say',
         ],
     },
     )
